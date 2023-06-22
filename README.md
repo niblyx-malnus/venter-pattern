@@ -2,6 +2,11 @@
 
 Use this pattern to get an immediate response from a poke.
 
+## Important Files
+- `/app/venter.hoon`
+- `/ted/venter.hoon`
+- `/sur/venter.hoon`
+
 ## Installation
 1. Clone this repo.
 2. Boot up a ship (fakezod or moon or whatever you use).
