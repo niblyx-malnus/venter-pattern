@@ -41,3 +41,13 @@ Use this pattern to get an immediate response from a poke.
 5. Check the state of the agent with `:venter +dbug`
 
    Your state should be empty again: `[%0 data=~]`
+
+## Use in your app
+1. Copy `ted/venter.hoon` into your desk.
+2. Define the `$vent-id` type as in `sur/venter.hoon`.
+3. Define the `$request` type as a `(pair vent-id action)` for your action.
+4. Create a mark in the `mar` folder corresponding to this `$request` type (you probably will want a mark for $action and $vent, too).
+5. Define your custom `$vent` update type, making sure it has an `[%ack ~]` case.
+6. Replicate the request-handling logic in `app/venter.hoon` in your agent.
+7. Replicate the `on-watch` subscription logic in `app/venter.hoon` in your agent.
+8. Call the `venter` thread with `[your-desk your-request-mark [destination-ship destination-agent] your-action]`.
