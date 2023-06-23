@@ -27,7 +27,7 @@
 :: (assumes a request is a vent-id and an action)
 ::
 ;<  =req=dais:clay  bind:m  (scry dais:clay /cb/[desk]/[req-mark]) 
-=/  req-cage=cage   [req-mark (vale:req-dais [vid axn])]
+=/  req-cage=cage   [req-mark (vale:req-dais [vid axn])] :: coerce to request
 ;<  ~               bind:m  (poke dock req-cage)
 :: if received response, return contents
 :: if instantly kicked, automatically ack
