@@ -1,5 +1,5 @@
 /-  *venter
-/+  dbug, verb, default-agent
+/+  vio=ventio, dbug, verb, default-agent
 |%
 +$  state-0  [%0 data=(map id datum)]
 +$  card  card:agent:gall
@@ -42,7 +42,7 @@
     :: handle request, then kick the vent subscription
     ::
     =^  cards  state  (handle-request vid axn)
-    =/  kick=card  [%give %kick ~[(en-path vid)] ~]
+    =/  kick=card  [%give %kick ~[(en-path:vio vid)] ~]
     :_(this (welp cards [kick]~))
     :: process the request and optionally send a vent update
     ::
@@ -54,9 +54,8 @@
           %create-datum
         =/  =id  (sham eny.bowl)
         :_  state(data (~(put by data) id t.axn))
-        [%give %fact ~[(en-path vid)] venter-vent+!>([%new-id id])]~
+        [%give %fact ~[(en-path:vio vid)] venter-vent+!>([%new-id id])]~
       ==
-    ++  en-path  |=(vid=vent-id /vent/(scot %p p.vid)/(scot %da q.vid))
     --
   ==
 ::

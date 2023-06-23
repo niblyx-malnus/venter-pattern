@@ -1,4 +1,4 @@
-/-  *venter
+/+  *venter
 |_  act=action
 ++  grow
   |%
@@ -7,6 +7,7 @@
 ++  grab
   |%
   ++  noun  action
+  ++  json  action:dejs
   --
 ++  grad  %noun
 --
