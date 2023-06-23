@@ -44,7 +44,7 @@ Use this pattern to get an immediate response from a poke.
 2. Copy and modify `ted/venter.hoon` to suit your needs.
 3. Define the `$vent-id` type as a `(pair @p @da)`.
 4. Define the `$request` type as a `(pair vent-id action)` for your action.
-5. Create a mark in the `mar` folder corresponding to this `$request` type (you probably will want a mark for `$action` and `$vent`, too).
+5. Create marks in the `mar` folder corresponding to `$request`, `$action` and `$vent`.
 6. Define your custom `$vent` update type, making sure it has an `[%ack ~]` case.
 7. Replicate the request-handling logic in `app/venter.hoon` in your agent.
 8. Replicate the `on-watch` subscription logic in `app/venter.hoon` in your agent.
