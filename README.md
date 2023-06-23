@@ -18,8 +18,11 @@ Use this pattern to get an immediate response from a poke.
 9. Install with `|install our %venter`.
 
 ## Test it Out
-1. In the dojo, create the helper function `=args |=([=ship axn=*]
-   [%venter %venter-request [ship %venter] axn])` (the thread accepts a `[desk mark dock axn=*]`)
+1. In the dojo, create the helper function:
+
+   `=args |=([=ship axn=*] [%venter %venter-request [ship %venter] axn])`
+
+   (the thread accepts a `[desk mark dock axn=*]`)
 
 2. Now enter `-venter!venter (args our %create-datum 'hello!')`
 
