@@ -19,7 +19,7 @@ Use this pattern to get an immediate response from a poke.
 
 ## Test it Out
 1. In the dojo, create the helper function `=args |=([=ship axn=*]
-   [%venter %venter-request [ship %venter] axn])`
+   [%venter %venter-request [ship %venter] axn])` (the thread accepts a `[desk mark dock *]`)
 2. Now enter `-venter!venter (args our %create-datum 'hello!')`
    You should get a response like: `vent=[%new-id id=0v6.4mje9.todhv.940lu.p1k2d.hqcco]`
 3. Check the state of the agent with `:venter +dbug`
