@@ -7,29 +7,31 @@
 |^  ^-  form:m
 :: process args
 ::
-=/  input=(unit [ship action])  !<((unit [ship action]) arg)
+=/  input=(unit [desk mark dock *])  !<((unit [desk mark dock *]) arg)
 ?~  input  (strand-fail %no-arg ~)
-=/  [snk=ship axn=action]  u.input
+=/  [=desk =req=mark =dock axn=*]  u.input
+:: define the vent id
 ::
 ;<  our=@p   bind:m  get-our
 ;<  now=@da  bind:m  get-time
-:: define the vent id
-::
 =/  vid=vent-id  [our now]
 :: listen for updates along this path
 ::
-=/  =wire   /vent/(scot %p p.vid)/(scot %da q.vid)
-;<  ~       bind:m  (watch wire [snk %venter] wire)
-:: poke the agent on snk with the id and action
+=/  =wire  /vent/(scot %p p.vid)/(scot %da q.vid)
+;<  ~      bind:m  (watch wire dock wire)
+:: poke the agent on the destination ship with the vent id and action
+:: (assumes a request is a vent-id and an action)
 ::
-;<  ~       bind:m  (poke [snk %venter] venter-request+!>([vid axn]))
+;<  =req=dais:clay  bind:m  (scry dais:clay /cb/[desk]/[req-mark]) 
+=/  req-cage=cage   [req-mark (vale:req-dais [vid axn])]
+;<  ~               bind:m  (poke dock req-cage)
 :: if received response, return contents
 :: if instantly kicked, automatically ack
 ::
-;<  cage=(unit cage)  bind:m  (take-fact-or-kick wire)
-?~  cage  (pure:m !>([%ack ~]))
+;<  rep-cage=(unit cage)  bind:m  (take-fact-or-kick wire)
+?~  rep-cage  (pure:m !>([%ack ~]))
 ;<  ~  bind:m  (take-kick wire)
-(pure:m q.u.cage)
+(pure:m q.u.rep-cage)
 ::
 ++  take-fact-or-kick
   |=  =wire

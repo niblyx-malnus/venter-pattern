@@ -18,11 +18,13 @@ Use this pattern to get an immediate response from a poke.
 9. Install with `|install our %venter`.
 
 ## Test it Out
-1. In the dojo, enter `-venter!venter [our %create-datum 'hello!']`
-2. You should get a response like: `vent=[%new-id id=0v6.4mje9.todhv.940lu.p1k2d.hqcco]`
+1. In the dojo, create the helper function `=args |=([=ship axn=*]
+   [%venter %venter-request [ship %venter] axn])`
+2. Now enter `-venter!venter (args our %create-datum 'hello!')`
+   You should get a response like: `vent=[%new-id id=0v6.4mje9.todhv.940lu.p1k2d.hqcco]`
 3. Check the state of the agent with `:venter +dbug`
-4. You should see something like: `[%0 data=[n=[p=0v6.4mje9.todhv.940lu.p1k2d.hqcco q='hello!'] l=~ r=~]]`
-5. Now try `-venter!venter [our %delete-datum 0v6.4mje9.todhv.940lu.p1k2d.hqcco]`
-6. You should get a response that says: `ack`
-7. Check the state of the agent with `:venter +dbug`
-8. Your state should be empty again: `[%0 data=~]`
+   You should see something like: `[%0 data=[n=[p=0v6.4mje9.todhv.940lu.p1k2d.hqcco q='hello!'] l=~ r=~]]`
+4. Now try `-venter!venter (args our %delete-datum 0v6.4mje9.todhv.940lu.p1k2d.hqcco)`
+   You should get a response that says: `ack`
+5. Check the state of the agent with `:venter +dbug`
+   Your state should be empty again: `[%0 data=~]`
