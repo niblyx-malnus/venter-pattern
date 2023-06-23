@@ -6,6 +6,10 @@
 =/  m  (strand ,vase)
 |^  ^-  form:m
 :: process args
+:: desk is the desk with the mark file of the request type
+:: req-mark is the mark of the request type
+:: dock is the destination of the request as an [agent ship]
+:: axn is any action, assumed to be in the tail of the request
 ::
 =/  input=(unit [desk mark dock *])  !<((unit [desk mark dock *]) arg)
 ?~  input  (strand-fail %no-arg ~)
