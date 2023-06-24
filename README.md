@@ -19,13 +19,13 @@ Use this pattern to get an immediate response from a poke.
 9. Install with `|install our %venter`.
 
 ## Test it Out
-1. Now enter `-venter!venter [%create-datum 'hello!']`
+1. Enter `-venter!venter [%create-datum 'hello!']` in the dojo.
 
    You should get a response like: `vent=[%new-id id=0v6.4mje9.todhv.940lu.p1k2d.hqcco]`
 
 3. Check the state of the agent with `:venter +dbug`
 
-   You should see something like: 
+   You should see: 
 
    `[%0 data=[n=[p=0v6.4mje9.todhv.940lu.p1k2d.hqcco q='hello!'] l=~ r=~]]`
 
