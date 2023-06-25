@@ -42,7 +42,10 @@ Use this pattern to get an immediate response from a poke.
 ## Use in your app
 1. Copy `lib/ventio.hoon` into your desk.
 2. Copy and modify `ted/venter.hoon` to suit your needs.
-  - The main helper gate `send-vent-request` accepts the `mark` of your `request` type, the `dock` (`[ship agent]`) you want to send your `request` to and the `action` you want to send as a `request`.
+  - The main helper gate `send-vent-request` accepts:
+    - the `mark` of your `request` type
+    - the `dock` (`[ship agent]`) you want to send your `request` to
+    - the `action` you want to send as a `request`
 4. Define the `$vent-id` type as a `(pair @p @da)`.
 5. Define the `$request` type as a `(pair vent-id action)` for your action.
 6. Define your custom `$vent` update type, making sure it has an `[%ack ~]` case.
