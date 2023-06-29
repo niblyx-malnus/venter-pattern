@@ -2,6 +2,16 @@
 
 Use this pattern to get an immediate response from a poke.
 
+## The Fundamental Pattern
+1. Accept a vent-id as well as an action in on-poke.
+2. Make a vent subscription path available in on-watch.
+3. In on-poke, process the action and send a vent update along this path.
+4. From the frontend, pass an action to a venter thread specialized to get a poke response.
+5. The thread creates a vent-id.
+6. The thread follows the subscription path of that vent-id.
+7. The thread pokes the agent with the vent-id and action.
+8. The thread awaits a single fact and/or a single kick from that path and returns the results.
+
 ## Important Files
 - `/app/venter.hoon`
 - `/ted/venter.hoon`
