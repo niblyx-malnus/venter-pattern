@@ -10,5 +10,6 @@
   $%  [%create-datum =@t]
       [%delete-datum =id]
   ==
-+$  request  (pair vent-id action)
++$  request   (pair vent-id action)
++$  response  (pair vent-id vent)
 --

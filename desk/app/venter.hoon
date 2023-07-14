@@ -57,6 +57,19 @@
         [%give %fact ~[(en-path:vio vid)] venter-vent+!>([%new-id id])]~
       ==
     --
+    ::
+      %venter-response
+    :: If you want to delegate the responsibilities of a poke
+    :: out to a thread, the thread can poke back in with a
+    :: %venter-response to send a vent along the appropriate
+    :: vent-id path.
+    ::
+    ?>  =(src our):bowl
+    =/  [vid=vent-id =vent]  !<(response vase)
+    :_  this
+    :~  [%give %fact ~[(en-path:vio vid)] venter-vent+!>(vent)]
+        [%give %kick ~[(en-path:vio vid)] ~]
+    ==
   ==
 ::
 ++  on-watch
