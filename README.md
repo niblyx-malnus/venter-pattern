@@ -28,6 +28,9 @@
   - `/ted/vines/...`
   - `/app/[desk-name]-venter.hoon`
   - `/ted/venter.hoon`
+  - `/mar/vent-package.hoon`
+  - `/mar/vent-request.hoon`
+  - `/mar/goof.hoon`
 - For This Example
   - `/sur/example.hoon`
   - `/app/venter-example.hoon`
@@ -44,36 +47,10 @@
 9. Install with `|install our %venter`.
 
 ## Test it Out
-1. Enter `-venter!venter [%create-datum 'hello!']` in the dojo.
 
-   You should get a response like: `vent=[%new-id id=0v6.4mje9.todhv.940lu.p1k2d.hqcco]`
-
-3. Check the state of the agent with `:venter +dbug`
-
-   You should see: 
-
-   `[%0 data=[n=[p=0v6.4mje9.todhv.940lu.p1k2d.hqcco q='hello!'] l=~ r=~]]`
-
-4. Now, using the `id` you received in step 2, try:
-
-   `-venter!venter [%delete-datum 0v6.4mje9.todhv.940lu.p1k2d.hqcco]`
-
-   You should get a response that says: `ack`
-
-5. Check the state of the agent with `:venter +dbug`
-
-   Your state should be empty again: `[%0 data=~]`
 
 ## Use in your app
-1. Copy `lib/ventio.hoon` into your desk.
-2. Copy and modify `ted/venter.hoon` to suit your needs.
-  - The main helper gate `send-vent-request` accepts:
-    - the `mark` associated with your `request` type
-    - the `dock` (`[ship agent]`) you want to send your `request` to
-    - the `action` you want to send as a `request`
-4. Define the `$vent-id` type as a `(pair @p @da)`.
-5. Define the `$request` type as a `(pair vent-id action)` for your action.
-6. Define your custom `$vent` update type, making sure it has an `[%ack ~]` case.
+.
 7. Create marks in the `mar` folder corresponding to `$request`, `$action` and `$vent`.
 8. Replicate the request-handling logic in `app/venter.hoon` in your agent.
 9. Replicate the `on-watch` subscription logic in `app/venter.hoon` in your agent.
