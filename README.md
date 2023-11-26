@@ -40,7 +40,3 @@
 
 
 ## Use in your app
-.
-7. Create marks in the `mar` folder corresponding to `$request`, `$action` and `$vent`.
-8. Replicate the request-handling logic in `app/venter.hoon` in your agent.
-9. Replicate the `on-watch` subscription logic in `app/venter.hoon` in your agent.
