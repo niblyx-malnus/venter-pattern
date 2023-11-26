@@ -3,7 +3,7 @@
 # the "venter" pattern
 
 ## Principles
-1. Agents should be [state machines](https://urbit.org/blog/io-in-hoon) and nothing more.
+1. [Agents should be state machines](https://urbit.org/blog/io-in-hoon) and nothing more.
 2. "Actions" usually involve asynchronous computation, especially when they
    interact with or compose with multiple agents.
 3. "Actions" should be able to return a response with meaningful data.
