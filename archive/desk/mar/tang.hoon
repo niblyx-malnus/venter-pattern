@@ -16,6 +16,11 @@
       %&  a+p.result
       %|  a+[a+[%s '[[output rendering error]]']~]~
     ==
+  ::
+  ++  elem
+    =-  ;pre:code:"{(of-wall -)}"
+    ^-  wall  %-  zing  ^-  (list wall)
+    (turn (flop tan) |=(a=tank (wash 0^160 a)))
   --
 ++  grab                                                ::  convert from
   |%

@@ -18,6 +18,7 @@
   =>  v=.
   |%
   ++  mime  =>  v  [/text/plain (as-octs (of-wain txt))]
+  ++  elem  =>  v  ;pre: {(trip (of-wain txt))}
   --
 ++  grad
   |%

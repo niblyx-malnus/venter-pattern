@@ -1,15 +1,6 @@
-# WARNING: README under construction
-
 # the "venter" pattern
 
-## Principles
-1. Agents should be state machines and nothing more.
-2. "Actions" usually involve asynchronous computation, especially when they
-   interact with or compose with multiple agents.
-3. "Actions" should be able to return a response with meaningful data.
-4. Crashes which occur while an "action" is being performed should be
-   propageted to whoever called the "action" -- even if the crash occurs in a
-   computation which has been delegated to another agent.
+Use this pattern to get an immediate response from a poke.
 
 ## The Fundamental Pattern
 1. Accept a vent-id as well as an action in on-poke.
@@ -22,16 +13,10 @@
 8. The thread awaits a single fact and/or a single kick from that path and returns the results.
 
 ## Important Files
-- For The Venter Pattern
-  - `/lib/ventio.hoon`
-  - `/lib/vent.hoon`
-  - `/ted/vines/...`
-  - `/app/[desk-name]-venter.hoon`
-  - `/ted/venter.hoon`
-- For This Example
-  - `/sur/example.hoon`
-  - `/app/venter-example.hoon`
-  - `/ted/vines/venter-example.hoon`
+- `/app/venter.hoon`
+- `/ted/venter.hoon`
+- `/lib/ventio.hoon`
+- `/sur/venter.hoon`
 
 ## Installation
 1. Clone this repo.
