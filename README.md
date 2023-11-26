@@ -8,7 +8,7 @@
    interact with or compose with multiple agents.
 3. "Actions" should be able to return a response with meaningful data.
 4. Crashes which occur while an "action" is being performed should be
-   propageted to whoever called the "action" -- even if the crash occurs in a
+   propagated to whoever called the "action" -- even if the crash occurs in a
    computation which has been delegated to another agent.
 
 ## Important Files
