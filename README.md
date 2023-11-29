@@ -118,8 +118,6 @@ are "responsible for." The thread dedicated to a given agent is called a
 "vine".
 [Diagram]
 
-# Interfacing From the Client
-
 ## Important Files
 - For The Venter Pattern
   - `/lib/ventio.hoon`
@@ -237,8 +235,10 @@ runs the `tube-warmer` thread everytime the desk changes.
   into your `/mar` directory. These are useful thread related marks. These
   should be the same as the ones in `%base`. (These may have once been actively
   used as part of the venter pattern, they're not anymore...)
-
+  
 ### Constraints
 - The venter agent must be named `%[your-desk]-venter`.
 - The `vine` associated with your agent must be in the `/ted/vines` directory
   and it must have the same name as its corresponding agent.
+
+## Interfacing From the Client
