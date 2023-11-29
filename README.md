@@ -1,4 +1,4 @@
-# WARNING: README under construction
+### WARNING: README under construction
 
 # the "venter" pattern
 
@@ -243,3 +243,5 @@ runs the `tube-warmer` thread everytime the desk changes.
   and it must have the same name as its corresponding agent.
 
 ## Interfacing From the Client
+`/interface/src/api.ts` shows how to create a simple API for venting from
+an agent.
