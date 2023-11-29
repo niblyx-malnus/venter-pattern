@@ -47,7 +47,7 @@ guarantee either a substantive response or a crash.
 
 - The [Urbit Precepts](https://urbit.org/blog/precepts) specify that, in Urbit,
   "everything should be CQRS." CQRS stands for Command-Query Responsibility
-  Segragation. In other words, Urbit organizes its program interfaces such that
+  Segregation. In other words, Urbit organizes its program interfaces such that
   commands or "actions" are strongly differentiated from the retrieval of data
   from those programs.
 
