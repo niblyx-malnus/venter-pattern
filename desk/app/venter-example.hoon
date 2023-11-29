@@ -1,6 +1,7 @@
 /-  *example
 /+  vent, dbug, verb, default-agent
 /=  x  /ted/vines/venter-example
+/=  x  /ted/test
 /=  x  /mar/example/transition
 /=  x  /mar/example/action
 /=  x  /mar/example/vent
