@@ -184,7 +184,8 @@ are unique so that requests to the same agent from the same thread don't get
 confused. Would it be nice to have a single canonical `%venter` agent?
 Probably. Will this happen tomorrow? No. Would this be a hurdle to the adoption
 and improvement of this pattern? Yes. Therefore, keep your own desk-specific
-venter agent.
+venter agent. This way it will never conflict with other venter agents that
+adhere to this convention.
 
 ### Client Utilities
 Copy `/ted/venter.hoon` into your `/ted` directory. This allows you to easily
