@@ -5,7 +5,7 @@
 ## Principles
 1. [Agents are state machines](https://urbit.org/blog/io-in-hoon), and this is
    ALL they should be.
-2. "Actions" (i.e. something you want an agent to "do" for you) usually involve
+2. "Actions" (i.e. things you want an agent to "do" for you) usually involve
    asynchronous computation, especially when the agent interacts with and
    composes with other agents.
 3. "Actions" should be able to return a response with meaningful data.
