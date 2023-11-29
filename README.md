@@ -3,13 +3,18 @@
 # the "venter" pattern
 
 ## Principles
-1. [Agents should be state machines](https://urbit.org/blog/io-in-hoon) and nothing more.
+1. [Agents are state machines](https://urbit.org/blog/io-in-hoon), and this is ALL they should be.
 2. "Actions" (i.e. something you want an agent to "do" for you) usually involve asynchronous computation,
-   especially when they interact with or compose with multiple agents.
+   especially when they interact with and compose with other agents.
 3. "Actions" should be able to return a response with meaningful data.
 4. Crashes which occur while an "action" is being performed should be
    propagated to whoever called the "action" -- even if the crash occurs in a
    computation which has been delegated to another agent or vane.
+
+## The Main Ideas
+
+### Venting
+### Vines
 
 ## Important Files
 - For The Venter Pattern
