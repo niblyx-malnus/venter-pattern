@@ -1,7 +1,11 @@
 |%
 +$  id     @uv
 +$  datum  @t
-+$  example-vent   $@(~ $%([%new-id =id]))
++$  example-vent
+  $@  ~
+  $%  [%new-id =id]
+      [%dlog log=@t] :: returns the current delete log
+  ==
 +$  transition
   $%  [%create-datum =id =@t]
       [%delete-datum =id]

@@ -3,6 +3,7 @@
 /=  x  /ted/vines/venter-example
 /=  x  /mar/example/transition
 /=  x  /mar/example/action
+/=  x  /mar/example/vent
 |%
 +$  state-0  [%0 data=(map id datum)]
 +$  card  card:agent:gall

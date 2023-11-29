@@ -30,18 +30,20 @@
     (pure:m !>(new-id+id))
     ::
       %delete-datum
-    :: delete the datum associated with an id
+    :: grab the datum associated with the id
+    ::
+    ;<  data=(map id datum)  bind:m  get-data :: data in agent state
+    =/  =datum  (~(got by data) id.axn)       :: get datum
+    :: delete the datum associated with the id
     :: 
     =/  =cage  example-transition+!>([%delete-datum id.axn])
     ;<  ~    bind:m  (poke [our dap]:gowl cage)
     :: log the deletion of the datum in /delete-log.txt
     ::
-    ;<  =sowl                bind:m  get-bowl :: spider bowl
-    ;<  data=(map id datum)  bind:m  get-data :: data in agent state
-    =/  =datum  (~(got by data) id.axn)       :: get datum
     :: read the current /delete-log.txt file
     ::
     =/  dlog=path  /delete-log/txt
+    ;<  =sowl                bind:m  get-bowl :: spider bowl
     ;<  =^cage               bind:m  (read-file byk.sowl dlog)
     =+  !<(file=wain q.cage)
     :: append a new line logging the deletion
@@ -54,9 +56,9 @@
           datum
       ==
     ;<  ~  bind:m  (mutate-file q.byk.sowl dlog txt+!>(file))
-    :: return null
+    :: return a copy of the current delete-log
     ::
-    (pure:m !>(~))
+    (pure:m !>(dlog+(of-wain:format file)))
     :: create and then delete a datum, logging the deletion
     :: (useless, but showcases the utility of "venting" in a "vine")
     ::
@@ -72,10 +74,11 @@
     ::
     ?>  ?=(%new-id -.vnt)
     =/  =^page  example-action+[%delete-datum id.vnt]
-    ;<  *  bind:m  ((vent ,*) [our dap]:gowl page)
-    :: return null
+    ;<  vnt=example-vent  bind:m
+      ((vent ,example-vent) [our dap]:gowl page)
+    :: return the copy of the delete log
     ::
-    (pure:m !>(~))
+    (pure:m !>(vnt))
   ==
 ==
 ::
