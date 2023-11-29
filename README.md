@@ -166,6 +166,7 @@ This shows that the file `/delete-log.txt` has been changed and returns its cont
 2. Edit the information `/src/api.ts` in `ship` and in `const urb` to reflect your ship and url setup.
 3. Run `npm install`.
 4. Run `nom start`.
+5. Follow instructions in the interface.
 
 ## Use in your app
 
