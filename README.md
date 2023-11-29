@@ -146,6 +146,26 @@ are "responsible for." The thread dedicated to a given agent is called a
 
 ## Test it Out
 
+### From the Dojo
+1. run `-venter!test create-datum+'some text'` in the dojo
+2. receive `[%new-id id=0v6.00rd2.b1hl8.q2v45.k5vln.20tit]` with some ID of type `@uv`
+3. run `-venter!test delete-datum+0v6.00rd2.b1hl8.q2v45.k5vln.20tit` with that ID
+4. receive:
+```
+: /~tomsug-nalwet-niblyx-malnus/venter/50/delete-log/txt                                                            
+[ %dlog                                                   
+    log                                                   
+  '===============================================================================\0aVENTER EXAMPLE DELETE LOG\0a===============================================================================\0a0v6.00rd2.b1hl8.q2v45.k5vln.20tit | ~2
+023.11.29..21.36.54..0bc2 | hello'
+]  
+```
+This shows that the file `/delete-log.txt` has been changed and returns its contents.
+
+### From the Client
+1. Go to the interface directory.
+2. Edit the information `/src/api.ts` in `ship` and in `const urb` to reflect your ship and url setup.
+3. Run `npm install`.
+4. Run `nom start`.
 
 ## Use in your app
 
