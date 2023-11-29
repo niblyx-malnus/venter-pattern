@@ -17,7 +17,8 @@
 
 ### Agent-side ID creation
 Because writing request-response cycles on urbit is currently effortful,
-clumsy, and mildly complicated, it is common to require that a unique ID be
+clumsy, and mildly complicated, it is common  when adding data to an urbit 
+"database" to require that a unique ID be
 given with a new piece of data, instead of generating a unique ID and returning
 it as a response. It would be more convenient on the client side to not have
 to worry about the generation of a unique id (or worse, to wait to learn the
