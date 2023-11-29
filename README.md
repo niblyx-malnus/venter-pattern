@@ -197,7 +197,7 @@ structure you give to the `/ted/venter.hoon` thread to make a `vent-request`
 from the client. `vent-request.hoon` is a mark for the `vent-request` itself.
 `goof.hoon` is a mark for the output of a typical crash report.
 
-### Your Own Action Marks
+### Your Own Action and Vent Marks
 Create your own marks in the `/mar` directory for your actions, as per usual.
 Create your own marks for the `vent`s, i.e. the responses you want to return.
 By convention `vent`s should be either `~` or a head-tagged union.
