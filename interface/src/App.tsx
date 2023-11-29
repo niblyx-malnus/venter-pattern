@@ -26,7 +26,7 @@ function App() {
           type="text"
           value={createInput}
           onChange={(e) => setCreateInput(e.target.value)}
-          placeholder="Create Datum"
+          placeholder="Enter some text"
         />
         <button onClick={handleCreate}>Create</button>
       </div>
@@ -35,7 +35,7 @@ function App() {
           type="text"
           value={deleteInput}
           onChange={(e) => setDeleteInput(e.target.value)}
-          placeholder="Delete Datum"
+          placeholder="Enter a datum ID"
         />
         <button onClick={handleDelete}>Delete</button>
       </div>
@@ -44,7 +44,7 @@ function App() {
           type="text"
           value={createDeleteInput}
           onChange={(e) => setCreateDeleteInput(e.target.value)}
-          placeholder="Create and Delete Datum"
+          placeholder="Enter some text"
         />
         <button onClick={handleCreateAndDelete}>Create and Delete</button>
       </div>
