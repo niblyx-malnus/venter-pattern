@@ -133,6 +133,7 @@ are "responsible for." The thread dedicated to a given agent is called a
   - `/sur/example.hoon`
   - `/app/venter-example.hoon`
   - `/ted/vines/venter-example.hoon`
+  - `/ted/test.hoon`
 
 ## Installation
 1. Clone this repo.
