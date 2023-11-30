@@ -3,13 +3,30 @@
 # the "venter" pattern
 
 ## Table of Contents
-1. [Principles](#principles)
-2. [Motivating Use Cases](#motivating-use-cases)
-3. [Core Ideas](#core-ideas)
-4. [Important Files](#important-files)
+1. [Important Files](#important-files)
+2. [Principles](#principles)
+3. [Motivating Use Cases](#motivating-use-cases)
+4. [Core Ideas](#core-ideas)
 5. [Install and test it out](#install-and-test-it-out)
 6. [Use in your app](#use-in-your-app)
 
+## Important Files
+- For The Venter Pattern
+  - `/lib/ventio.hoon`
+  - `/lib/vent.hoon`
+  - `/ted/vines/...`
+  - `/app/[desk-name]-venter.hoon`
+  - `/ted/venter.hoon`
+  - `/mar/vent-package.hoon`
+  - `/mar/vent-request.hoon`
+  - `/mar/goof.hoon`
+  - `/ted/tube-warmer.hoon`
+- For This Example
+  - `/sur/example.hoon`
+  - `/app/venter-example.hoon`
+  - `/ted/vines/venter-example.hoon`
+  - `/ted/test.hoon`
+ 
 ## Principles
 1. [Agents are state machines](https://urbit.org/blog/io-in-hoon), and this is
    ALL they should be.
@@ -148,23 +165,6 @@ are "responsible for." The thread dedicated to a given agent is called a
 
 Our agent delegates the handling of this action to its vine because the vine,
 as a thread, makes asynchronous computation much easier to reason about.
-
-## Important Files
-- For The Venter Pattern
-  - `/lib/ventio.hoon`
-  - `/lib/vent.hoon`
-  - `/ted/vines/...`
-  - `/app/[desk-name]-venter.hoon`
-  - `/ted/venter.hoon`
-  - `/mar/vent-package.hoon`
-  - `/mar/vent-request.hoon`
-  - `/mar/goof.hoon`
-  - `/ted/tube-warmer.hoon`
-- For This Example
-  - `/sur/example.hoon`
-  - `/app/venter-example.hoon`
-  - `/ted/vines/venter-example.hoon`
-  - `/ted/test.hoon`
 
 ## Install and test it out
 ### Installation
