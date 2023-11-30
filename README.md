@@ -26,8 +26,16 @@ new id from a subscription update) and instead to be able to simply create
 something and receive a response with the new ID.
 
 ![Generating ID Client-Side](https://raw.githubusercontent.com/niblyx-malnus/venter-pattern/main/diagrams/images/generate_ID_client_side.png "Generating ID Client-Side")
+
+The above is the typical scenario for creating a datum with an ID on urbit.
+
 ![Generating ID Server-Side; Normal Sync Subscription](https://raw.githubusercontent.com/niblyx-malnus/venter-pattern/main/diagrams/images/server_side_normal_sync.png "Generating ID Server-Side; Normal Sync Subscription")
+
+This can happen as well, where you don't generate an ID from the client, but you try to recognize an incoming update as the datum you created and retrieve the ID from that update.
+
 ![Ideal ID Request-Response Cycle](https://raw.githubusercontent.com/niblyx-malnus/venter-pattern/main/diagrams/images/ideal_ID_request_response.png "Ideal ID Request-Response Cycle")
+
+This is the ideal case of generating an ID server-side and immediately returning it.
 
 ### Remote crash forwarding to the client
 It is common to forward pokes relevant to data hosted on another ship to that
