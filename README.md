@@ -105,6 +105,9 @@ are already set up as an intuitive request-response cycle. Therefore we can
 call into a dedicated thread which is responsible for making "vent-request" to
 agents and returning their responses.
 
+![Venter Thread](https://raw.githubusercontent.com/niblyx-malnus/venter-pattern/main/diagrams/images/venter_thread.png "Venter Thread")
+
+
 ### Vines
 The idea of vines emerges now from two sources. First, suppose we want agents
 in the process of "venting" to be able to make "vent-requests" to other agents.
