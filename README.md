@@ -2,6 +2,15 @@
 
 # the "venter" pattern
 
+## Table of Contents
+1. [Principles](#principles)
+2. [Motivating Use Cases](#motivating-use-cases)
+3. [Core Ideas](#core-ideas)
+4. [Important Files](#important-files)
+5. [Installation](#installation)
+6. [Test it out](#test-it-out)
+7. [Use in your app](#use-in-your-app)
+
 ## Principles
 1. [Agents are state machines](https://urbit.org/blog/io-in-hoon), and this is
    ALL they should be.
