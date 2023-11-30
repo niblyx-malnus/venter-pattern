@@ -94,7 +94,8 @@ guarantee either a substantive response or a crash.
      and a kick on the "vent-path". The fact contains a "vent", which is
      defined by the programmer and can be either `~` or a head-tagged union.
      The null case should be interpreted as a simple "ack".
-  [Diagram]
+
+![Venter Pattern](https://raw.githubusercontent.com/niblyx-malnus/venter-pattern/main/diagrams/images/venter_pattern.png "Venter Pattern")
 
 ### Introducing Threads
 The whole pattern as we have described it is a tangled asynchronous rigmarole
