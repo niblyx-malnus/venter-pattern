@@ -7,9 +7,8 @@
 2. [Motivating Use Cases](#motivating-use-cases)
 3. [Core Ideas](#core-ideas)
 4. [Important Files](#important-files)
-5. [Installation](#installation)
-6. [Test it out](#test-it-out)
-7. [Use in your app](#use-in-your-app)
+5. [Install and Test it Out](#install-and-test-it-out)
+6. [Use in your app](#use-in-your-app)
 
 ## Principles
 1. [Agents are state machines](https://urbit.org/blog/io-in-hoon), and this is
@@ -167,7 +166,8 @@ as a thread, makes asynchronous computation much easier to reason about.
   - `/ted/vines/venter-example.hoon`
   - `/ted/test.hoon`
 
-## Installation
+## Install and Test it Out
+### Installation
 1. Clone this repo.
 2. Boot up a ship (fakezod or moon or whatever you use).
 4. `|new-desk %venter` to create a new desk called `%venter`.
@@ -177,9 +177,7 @@ as a thread, makes asynchronous computation much easier to reason about.
 8. At the dojo command line `|commit %venter`.
 9. Install with `|install our %venter`.
 
-## Test it Out
-
-### From the Dojo
+### Test From the Dojo
 1. run `-venter!test create-datum+'some text'` in the dojo
 2. receive `[%new-id id=0v6.00rd2.b1hl8.q2v45.k5vln.20tit]` with some ID of type `@uv`
 3. run `-venter!test delete-datum+0v6.00rd2.b1hl8.q2v45.k5vln.20tit` with that ID
@@ -194,7 +192,7 @@ as a thread, makes asynchronous computation much easier to reason about.
 ```
 This shows that the file `/delete-log.txt` has been changed and returns its contents.
 
-### From the Client
+### Test From the Client
 1. Go to the interface directory.
 2. Edit the information `/src/api.ts` in `ship` and in `const urb` to reflect your ship and url setup.
 3. Run `npm install`.
