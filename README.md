@@ -35,7 +35,8 @@ ship. However, in so doing, the client can no longer learn about crashes
 related to that poke and only learns of the success or failure of its poke
 to the local agent. A full request-response cycle that passes the remote
 failure along to the original client would be more ideal.
-[Diagram]
+![Poke Forwarding With Nack](https://raw.githubusercontent.com/niblyx-malnus/venter-pattern/main/diagrams/images/poke_forwarding_with_nack.png "Poke Forwarding With Nack")
+![Ideal Poke Forwarding](https://raw.githubusercontent.com/niblyx-malnus/venter-pattern/main/diagrams/images/ideal_poke_forwarding.png "Ideal Poke Forwarding")
 
 ### Arbitrary nesting of complete request-response cycles
 Once we can conceive of these complete request-response cycles, we naturally
