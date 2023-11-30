@@ -7,7 +7,7 @@
 2. [Motivating Use Cases](#motivating-use-cases)
 3. [Core Ideas](#core-ideas)
 4. [Important Files](#important-files)
-5. [Install and Test it Out](#install-and-test-it-out)
+5. [Install and test it out](#install-and-test-it-out)
 6. [Use in your app](#use-in-your-app)
 
 ## Principles
@@ -166,7 +166,7 @@ as a thread, makes asynchronous computation much easier to reason about.
   - `/ted/vines/venter-example.hoon`
   - `/ted/test.hoon`
 
-## Install and Test it Out
+## Install and test it out
 ### Installation
 1. Clone this repo.
 2. Boot up a ship (fakezod or moon or whatever you use).
