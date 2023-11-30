@@ -25,7 +25,7 @@ to worry about the generation of a unique id (or worse, to wait to learn the
 new id from a subscription update) and instead to be able to simply create
 something and receive a response with the new ID.
 
-![Generating ID Client-Side](https://raw.githubusercontent.com/niblyx-malnus/venter-pattern/tree/main/diagrams/images/generate_ID_client_side.png "Generating ID Client-Side")
+![Generating ID Client-Side](https://raw.githubusercontent.com/niblyx-malnus/venter-pattern/tree/main/diagrams/images/generate_ID_client_side.png)
    
 ### Remote crash forwarding to the client
 It is common to forward pokes relevant to data hosted on another ship to that
