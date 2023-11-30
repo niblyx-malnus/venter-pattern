@@ -26,6 +26,8 @@ new id from a subscription update) and instead to be able to simply create
 something and receive a response with the new ID.
 
 ![Generating ID Client-Side](https://raw.githubusercontent.com/niblyx-malnus/venter-pattern/main/diagrams/images/generate_ID_client_side.png "Generating ID Client-Side")
+![Generating ID Server-Side; Normal Sync Subscription](https://raw.githubusercontent.com/niblyx-malnus/venter-pattern/main/diagrams/images/server_side_normal_sync.png "Generating ID Server-Side; Normal Sync Subscription")
+![Ideal ID Request-Response Cycle](https://raw.githubusercontent.com/niblyx-malnus/venter-pattern/main/diagrams/images/ideal_ID_request_response.png "Ideal ID Request-Response Cycle")
 
 ### Remote crash forwarding to the client
 It is common to forward pokes relevant to data hosted on another ship to that
