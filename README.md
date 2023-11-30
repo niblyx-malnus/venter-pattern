@@ -107,6 +107,8 @@ agents and returning their responses.
 
 ![Venter Thread](https://raw.githubusercontent.com/niblyx-malnus/venter-pattern/main/diagrams/images/venter_thread.png "Venter Thread")
 
+The Thread in this diagram is equivalent to `/ted/venter.hoon`.
+
 
 ### Vines
 The idea of vines emerges now from two sources. First, suppose we want agents
