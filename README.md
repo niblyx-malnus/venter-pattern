@@ -138,6 +138,9 @@ are "responsible for." The thread dedicated to a given agent is called a
 
 ![Vine](https://raw.githubusercontent.com/niblyx-malnus/venter-pattern/main/diagrams/images/vine.png "Vine")
 
+Our agent delegates the handling of this action to its vine because the vine,
+as a thread, makes asynchronous computation much easier to reason about.
+
 ## Important Files
 - For The Venter Pattern
   - `/lib/ventio.hoon`
