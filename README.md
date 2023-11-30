@@ -135,7 +135,8 @@ response, to return a crash or to hang (hangs can be avoided with timeouts).
 It also allows to start thinking in terms of asynchronous actions that agents
 are "responsible for." The thread dedicated to a given agent is called a
 "vine".
-[Diagram]
+
+![Vine](https://raw.githubusercontent.com/niblyx-malnus/venter-pattern/main/diagrams/images/vine.png "Vine")
 
 ## Important Files
 - For The Venter Pattern
