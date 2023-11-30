@@ -24,8 +24,9 @@ it as a response. It would be more convenient on the client side to not have
 to worry about the generation of a unique id (or worse, to wait to learn the
 new id from a subscription update) and instead to be able to simply create
 something and receive a response with the new ID.
-[Diagram]
-   
+
+![Generating ID Client-Side](https://raw.githubusercontent.com/niblyx-malnus/venter-pattern/main/diagrams/images/generate_ID_client_side.png "Generating ID Client-Side")
+
 ### Remote crash forwarding to the client
 It is common to forward pokes relevant to data hosted on another ship to that
 ship. However, in so doing, the client can no longer learn about crashes
