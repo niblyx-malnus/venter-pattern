@@ -1,5 +1,5 @@
 /-  *example
-/+  vent, dbug, verb, default-agent
+/+  vent, bout, dbug, verb, default-agent
 /=  x  /ted/vines/venter-example
 /=  x  /ted/test
 /=  x  /mar/example/transition
@@ -13,6 +13,7 @@
 =*  state  -
 :: apply the venter agent transformer
 ::
+:: %-  agent:bout
 %-  agent:vent
 %-  agent:dbug
 %+  verb  |
