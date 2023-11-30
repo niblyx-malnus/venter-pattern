@@ -52,7 +52,6 @@ Once we can conceive of these complete request-response cycles, we naturally
 want to make them available to one another, so one request-response cycle
 can call maybe several others, which can call still more, and which always
 guarantee either a substantive response or a crash.
-[Diagram]
 
 ## Core Ideas
 
