@@ -2,6 +2,31 @@
 
 # the "venter" pattern
 
+## Table of Contents
+1. [Important Files](#important-files)
+2. [Principles](#principles)
+3. [Motivating Use Cases](#motivating-use-cases)
+4. [Core Ideas](#core-ideas)
+5. [Install and test it out](#install-and-test-it-out)
+6. [Use in your app](#use-in-your-app)
+
+## Important Files
+- For The Venter Pattern
+  - `/lib/ventio.hoon`
+  - `/lib/vent.hoon`
+  - `/ted/vines/...`
+  - `/app/[desk-name]-venter.hoon`
+  - `/ted/venter.hoon`
+  - `/mar/vent-package.hoon`
+  - `/mar/vent-request.hoon`
+  - `/mar/goof.hoon`
+  - `/ted/tube-warmer.hoon`
+- For This Example
+  - `/sur/example.hoon`
+  - `/app/venter-example.hoon`
+  - `/ted/vines/venter-example.hoon`
+  - `/ted/test.hoon`
+ 
 ## Principles
 1. [Agents are state machines](https://urbit.org/blog/io-in-hoon), and this is
    ALL they should be.
@@ -135,26 +160,14 @@ response, to return a crash or to hang (hangs can be avoided with timeouts).
 It also allows to start thinking in terms of asynchronous actions that agents
 are "responsible for." The thread dedicated to a given agent is called a
 "vine".
-[Diagram]
 
-## Important Files
-- For The Venter Pattern
-  - `/lib/ventio.hoon`
-  - `/lib/vent.hoon`
-  - `/ted/vines/...`
-  - `/app/[desk-name]-venter.hoon`
-  - `/ted/venter.hoon`
-  - `/mar/vent-package.hoon`
-  - `/mar/vent-request.hoon`
-  - `/mar/goof.hoon`
-  - `/ted/tube-warmer.hoon`
-- For This Example
-  - `/sur/example.hoon`
-  - `/app/venter-example.hoon`
-  - `/ted/vines/venter-example.hoon`
-  - `/ted/test.hoon`
+![Vine](https://raw.githubusercontent.com/niblyx-malnus/venter-pattern/main/diagrams/images/vine.png "Vine")
 
-## Installation
+Our agent delegates the handling of this action to its vine because the vine,
+as a thread, makes asynchronous computation much easier to reason about.
+
+## Install and test it out
+### Installation
 1. Clone this repo.
 2. Boot up a ship (fakezod or moon or whatever you use).
 4. `|new-desk %venter` to create a new desk called `%venter`.
@@ -164,9 +177,7 @@ are "responsible for." The thread dedicated to a given agent is called a
 8. At the dojo command line `|commit %venter`.
 9. Install with `|install our %venter`.
 
-## Test it Out
-
-### From the Dojo
+### Test From the Dojo
 1. run `-venter!test create-datum+'some text'` in the dojo
 2. receive `[%new-id id=0v6.00rd2.b1hl8.q2v45.k5vln.20tit]` with some ID of type `@uv`
 3. run `-venter!test delete-datum+0v6.00rd2.b1hl8.q2v45.k5vln.20tit` with that ID
@@ -181,7 +192,7 @@ are "responsible for." The thread dedicated to a given agent is called a
 ```
 This shows that the file `/delete-log.txt` has been changed and returns its contents.
 
-### From the Client
+### Test From the Client
 1. Go to the interface directory.
 2. Edit the information `/src/api.ts` in `ship` and in `const urb` to reflect your ship and url setup.
 3. Run `npm install`.
