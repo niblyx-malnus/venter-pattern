@@ -166,6 +166,9 @@ are "responsible for." The thread dedicated to a given agent is called a
 Our agent delegates the handling of this action to its vine because the vine,
 as a thread, makes asynchronous computation much easier to reason about.
 
+## The Example
+`[Description and explanation of the example code, adding, deleting datum, etc]`
+
 ## Install and test it out
 ### Installation
 1. Clone this repo.
