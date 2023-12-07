@@ -173,7 +173,15 @@ as a thread, makes asynchronous computation much easier to reason about.
 ## Install and test it out
 ### Installation
 1. Clone this repo.
-2. Boot up a ship (fakezod or moon or whatever you use).
+2. Pull in the [urbit repo](https://github.com/urbit/urbit) submodule.
+```
+# have `git pull` also get the pinned commit of the Urbit submodule
+$: git config --global submodule.recurse true
+# init submodule, and then pull it
+$: git submodule update --init --recursive
+$: git pull
+```
+3. Boot up a ship (fakezod or moon or whatever you use).
 4. `|new-desk %venter` to create a new desk called `%venter`.
 5. `|mount %venter` to access the `%venter` desk from the unix command line.
 6. At the unix command line `rm -rf [ship-name]/venter/*` to empty out the contents of the desk.
