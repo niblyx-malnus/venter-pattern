@@ -7,8 +7,9 @@
 2. [Principles](#principles)
 3. [Motivating Use Cases](#motivating-use-cases)
 4. [Core Ideas](#core-ideas)
-5. [Install and test it out](#install-and-test-it-out)
-6. [Use in your app](#use-in-your-app)
+5. [Explaining the Example](#explaining-the-example)
+6. [Install and test it out](#install-and-test-it-out)
+7. [Use in your app](#use-in-your-app)
 
 ## Important Files
 - For The Venter Pattern
@@ -165,6 +166,9 @@ are "responsible for." The thread dedicated to a given agent is called a
 
 Our agent delegates the handling of this action to its vine because the vine,
 as a thread, makes asynchronous computation much easier to reason about.
+
+## Explaining The Example
+`[Description and explanation of the example code, adding, deleting datum, etc]`
 
 ## Install and test it out
 ### Installation
