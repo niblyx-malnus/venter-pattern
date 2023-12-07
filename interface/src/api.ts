@@ -5,7 +5,7 @@ const ship = "tomsug-nalwet-niblyx-malnus";
 
 const api = {
   createApi: memoize(() => {
-      const urb = new Urbit("http://localhost:8081", "");
+      const urb = new Urbit("http://localhost:8080", "");
       urb.ship = ship;
       urb.onError = (message) => console.log("onError: " + message);
       urb.onOpen = () => console.log("urbit onOpen");
