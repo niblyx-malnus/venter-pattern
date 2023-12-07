@@ -173,7 +173,7 @@ as a thread, makes asynchronous computation much easier to reason about.
 ## Install and test it out
 ### Installation
 1. Clone this repo.
-2. Pull in the [urbit repo](https://github.com/urbit/urbit) submodule.
+2. Pull in the [urbit repo](https://github.com/urbit/urbit) submodule:
 ```
 # have `git pull` also get the pinned commit of the Urbit submodule
 $: git config --global submodule.recurse true
