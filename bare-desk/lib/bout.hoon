@@ -1,3 +1,7 @@
+::  bout: agent wrapper for printing profiling information
+::
+::    usage: %-(agent:bout your-agent)
+::
 |%
 ++  agent
   |=  =agent:gall
