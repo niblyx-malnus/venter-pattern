@@ -3,8 +3,8 @@
 ::    initialize agent-bind somewhere:
 ::      |%  ++  agent-bind  (agent:bind & ~[[`/path &]])  --
 ::      +agent:bind accepts a verbosity flag and a list of
-::      $binding / force-flag pairs. %.y to forcefully
-::      overwrite a binding which already exist
+::      $binding / force-flag pairs.
+::      %.y to forcefully overwrite a binding which already exists.
 ::
 ::    usage: %-(agent-bind your-agent)
 ::
