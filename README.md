@@ -185,7 +185,7 @@ $: git pull
 4. `|new-desk %venter` to create a new desk called `%venter`.
 5. `|mount %venter` to access the `%venter` desk from the unix command line.
 6. At the unix command line `rm -rf [ship-name]/venter/*` to empty out the contents of the desk.
-7. `cp -r venter/* [ship-name]/venter` to copy the contents of this repo into your new desk.
+7. `cp -rL venter/* [ship-name]/venter` to copy the contents of this repo into your new desk.
 8. At the dojo command line `|commit %venter`.
 9. Install with `|install our %venter`.
 
